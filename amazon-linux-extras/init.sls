@@ -1,5 +1,4 @@
-{% set pget = salt['pillar.get'] %}
-{% for app in pget('amazon-linux-extras', {}) %}
+{% for app in salt['pillar.get']('amazon-linux-extras', {}) %}
 /bin/amazon-linux-extras install {{ app }}:
   cmd.run:
     - unless: 
