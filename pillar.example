@@ -1,0 +1,6 @@
+amazon-linux-extras:
+  - nginx1
+  - php7.3
+  - python3
+  - epel
+  - java-openjdk11
