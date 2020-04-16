@@ -4,4 +4,5 @@
   cmd.run:
     - unless: 
       - /bin/amazon-linux-extras list | grep {{ app }} | grep -c enabled
+{% endfor %}
     
